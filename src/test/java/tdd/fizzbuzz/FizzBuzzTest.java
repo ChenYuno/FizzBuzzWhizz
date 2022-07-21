@@ -73,5 +73,16 @@ public class FizzBuzzTest {
         assertThat(output).isEqualTo(except);
     }
 
+    @Test
+    void should_output_FizzBuzzWhizz_when_multiple_of_3_and_5_and_7_given_210() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String output = fizzBuzz.countOff(210);
+        //then
+        String except = "FizzBuzzWhizz";
+        assertThat(output).isEqualTo(except);
+    }
+
 
 }
