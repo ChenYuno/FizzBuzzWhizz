@@ -62,5 +62,16 @@ public class FizzBuzzTest {
         assertThat(output).isEqualTo(except);
     }
 
+    @Test
+    void should_output_default_number_when_not_multiple_of_3_and_5_and_7_given_2() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String output = fizzBuzz.countOff(2);
+        //then
+        String except = "2";
+        assertThat(output).isEqualTo(except);
+    }
+
 
 }
