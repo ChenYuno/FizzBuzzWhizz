@@ -12,11 +12,14 @@ import tdd.util.Constant;
 public class FizzBuzz {
 
     public String countOff(int num) {
-        return isMultiplyThree(num) ? Constant.FIZZ : "";
+        return isMultiplyOfThree(num) ? Constant.FIZZ : String.valueOf(num);
     }
 
 
-    private boolean isMultiplyThree(int num) {
+    private boolean isMultiplyOfThree(int num) {
         return num % 3 == 0;
+    }
+    private boolean isMultiplyOfFive(int num) {
+        return num % 5 == 0;
     }
 }
