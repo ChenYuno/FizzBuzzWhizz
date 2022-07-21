@@ -51,5 +51,16 @@ public class FizzBuzzTest {
         assertThat(output).isEqualTo(except);
     }
 
+    @Test
+    void should_output_FizzWhizz_when_multiple_of_3_and_7_given_21() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String output = fizzBuzz.countOff(21);
+        //then
+        String except = "FizzWhizz";
+        assertThat(output).isEqualTo(except);
+    }
+
 
 }
