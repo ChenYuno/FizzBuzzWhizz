@@ -85,4 +85,16 @@ public class FizzBuzzTest {
     }
 
 
+    @Test
+    void should_output_BuzzFizz_when_Contain_3_and_5_given_53() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String output = fizzBuzz.countOff(53);
+        //then
+        String except = "BuzzFizz";
+        assertThat(output).isEqualTo(except);
+    }
+
+
 }

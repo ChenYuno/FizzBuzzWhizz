@@ -13,6 +13,15 @@ public class FizzBuzz {
         return reData.equals("") ? String.valueOf(num) : reData;
     }
 
+    private boolean isContainThree(int num) {
+        return false;
+    }
+    private boolean isContainFive(int num) {
+        return false;
+    }
+    private boolean isContainSeven(int num) {
+        return false;
+    }
 
     private boolean isMultiplyOfThree(int num) {
         return num % 3 == 0;
