@@ -39,6 +39,17 @@ public class FizzBuzzTest {
         String except = "Whizz";
         assertThat(output).isEqualTo(except);
     }
-    
+
+    @Test
+    void should_output_FizzBuzz_when_multiple_of_3_and_5_given_15() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String output = fizzBuzz.countOff(15);
+        //then
+        String except = "FizzBuzz";
+        assertThat(output).isEqualTo(except);
+    }
+
 
 }
